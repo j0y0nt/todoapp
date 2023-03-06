@@ -48,7 +48,6 @@ class ToDo extends React.Component {
     }
 
     deleteTask(taskId, event) {
-	alert(taskId);
 	let updatedTasks = this.state.tasks;
 	updatedTasks.delete(taskId);
 	this.setState((state, props) => ({
@@ -71,7 +70,6 @@ class ToDo extends React.Component {
 				   textDecoration: task.done? 'line-through': ''
 			       }}>
 				{task.text}
-				{console.log(task)}
 			    </p>
 			</div>
 			<div className="deleteButtonDiv">
